@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula Programação WEB</title>
+
+</head>
+
+<body>
+
+  <!-- Cabeçalho da página-->
+  <header>
+    <h1> HTML - Conceitos básicos</h1>
+  </header>
+
+  <!-- Menu de navegação-->
+  <nav>
+    <a href="titulo.html">Titulo HTML </a> <br />
+    <a href="list.html">Listas </a> <br />
+    <a href="listOrdenadas.html">Listas Ordenadas </a> <br />
+    <a href="table.html">Tabelas </a><br />
+    <a href="forms.html">Formularios </a>
+  </nav>
+
+  <!-- Seção-->
+  <section id="conteudo">
+
+  </section>
+
+  <!-- Rodapé-->
+  <footer>
+    <p> Página da disciplina de programação 3</p>
+  </footer>
+
+  <script>
+    const tagA = document.querySelectorAll('a');
+
+    const tagSection = document.getElementById('conteudo');
+
+    tagA.forEach(elem => {
+      elem.onclick = function (e) {
+        e.preventDefault();
+        fetch(elem.href)
+          .then(resp => resp.text())
+          .then(html => tagSection.innerHTML = html)
+      }
+    })
+  </script>
+
+</body>
+
+</html>
