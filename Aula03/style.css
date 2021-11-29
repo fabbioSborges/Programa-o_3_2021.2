@@ -1,0 +1,49 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0 auto;
+  background: lightgray;
+  height: 100%;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-principal {
+  text-align: center;
+}
+
+.menu-principal h1 {
+  background: #333;
+  color: white;
+  border-bottom: 5px solid;
+  margin: 0;
+  padding: 1.5rem 0;
+}
+
+.menu-principal nav {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.menu-principal a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #222;
+  font-size: 1.2rem;
+  background: white;
+  margin-top: 0.5rem;
+  border-radius: 5%;
+  transition: background 0.5s;
+}
+
+.menu-principal a:hover {
+  background: steelblue;
+}
