@@ -1,0 +1,106 @@
+/* Resetar as estilizações */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* variaveis */
+:root {
+  --corPadrao: 159;
+}
+
+/* Estilização genericas */
+
+.title {
+  font: 700 1.8rem "Poppins", sans-serif;
+  color: hsl(var(--corPadrao), 41%, 10%);
+  -webkit-font-smoothing: antialiased;
+}
+
+.button {
+  background: hsl(var(--corPadrao), 36%, 57%);
+  color: hsl(0, 0%, 98%);
+  height: 3.5rem;
+  align-items: center;
+  display: inline-flex;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: hsl(var(--corPadrao), 57%, 53%);
+}
+
+body {
+  font: 400 1rem "DM Sans", sans-serif;
+  color: hsl(0 0% 46%);
+  background: hsl(0 0% 98%);
+}
+/* ---- Section Home */
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section .title {
+  margin-bottom: 1rem;
+}
+
+/* ---- Home */
+#home {
+  overflow: hidden;
+}
+
+#home .container {
+  margin: 0;
+}
+
+#home .image {
+  position: relative;
+}
+
+#home .image::before {
+  position: absolute;
+  top: -15%;
+  left: 15%;
+  content: "";
+  background: hsl(var(--corPadrao) 65% 88%);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#home .image img {
+  position: relative;
+  right: 10%;
+}
+
+#home .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+
+#home .text p {
+  margin-bottom: 2rem;
+}
