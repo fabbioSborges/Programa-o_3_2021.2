@@ -12,7 +12,6 @@ for (const link of links) {
   link.addEventListener("click", function () {
     nav.classList.remove("show");
   });
-<<<<<<< HEAD
 }
 
 const swiper = new Swiper(".swiper", {
@@ -36,6 +35,3 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
-=======
-}
->>>>>>> d870710a1333efbd0e426bd788889c159fcb93ae
