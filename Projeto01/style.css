@@ -58,11 +58,14 @@ body {
 }
 /* ---- Section Home */
 #home .container {
+<<<<<<< HEAD
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
 
 .container {
+=======
+>>>>>>> d870710a1333efbd0e426bd788889c159fcb93ae
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -182,7 +185,10 @@ nav .close {
 }
 
 nav .open {
+<<<<<<< HEAD
   right: 1.5rem;
+=======
+>>>>>>> d870710a1333efbd0e426bd788889c159fcb93ae
 }
 
 nav.show .close {
@@ -194,7 +200,10 @@ nav.show .close {
 }
 
 .chave {
+<<<<<<< HEAD
   position: absolute;
+=======
+>>>>>>> d870710a1333efbd0e426bd788889c159fcb93ae
   cursor: pointer;
 }
 
@@ -205,6 +214,7 @@ nav.show .close {
 }
 .logo span {
   color: hsl(var(--corPadrao), 36%, 57%);
+<<<<<<< HEAD
 }
 
 /*------ SOBRE NÓS -----*/
@@ -264,3 +274,6 @@ nav.show .close {
   height: 2rem;
   clip-path: circle();
 }
+=======
+}
+>>>>>>> d870710a1333efbd0e426bd788889c159fcb93ae
