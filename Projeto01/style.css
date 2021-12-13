@@ -47,7 +47,21 @@ body {
   color: hsl(0 0% 46%);
   background: hsl(0 0% 98%);
 }
+
+.divisao {
+  height: 1px;
+  background: linear-gradient(
+    100deg,
+    hsl(var(--corPadrao) 65% 88%),
+    hsl(0 0% 46%)
+  );
+}
 /* ---- Section Home */
+#home .container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -77,6 +91,7 @@ body {
 
 #home .image {
   position: relative;
+  right: 1.5rem;
 }
 
 #home .image::before {
@@ -92,7 +107,6 @@ body {
 
 #home .image img {
   position: relative;
-  right: 10%;
 }
 
 #home .text {
@@ -103,4 +117,150 @@ body {
 
 #home .text p {
   margin-bottom: 2rem;
+}
+
+/* Navegação */
+
+nav {
+  height: 4.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
+  top: -20rem;
+}
+
+nav .menu ul {
+  display: none;
+}
+
+nav.show .menu ul {
+  display: grid;
+}
+
+nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+  background-color: hsl(0 0% 98%);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 1;
+  display: grid;
+  place-content: center;
+}
+nav ul li {
+  text-align: center;
+}
+
+nav ul li a.title:hover {
+  color: hsl(var(--corPadrao), 36%, 57%);
+}
+
+nav.show ul.grid {
+  gap: 4rem;
+}
+
+ul {
+  list-style: none;
+}
+
+nav .close {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  top: -1.5rem;
+  right: 1.5rem;
+  transition: 1s;
+}
+
+nav .open {
+  right: 1.5rem;
+}
+
+nav.show .close {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  top: 1.5rem;
+  z-index: 10;
+}
+
+.chave {
+  position: absolute;
+  cursor: pointer;
+}
+
+.logo {
+  font: 700 1.2rem "Poppins", sans-serif;
+  color: black;
+  margin-left: 1rem;
+}
+.logo span {
+  color: hsl(var(--corPadrao), 36%, 57%);
+}
+
+/*------ SOBRE NÓS -----*/
+#sobre .container {
+  margin-right: 0;
+}
+
+#sobre .image {
+  position: relative;
+}
+
+#sobre .image::before {
+  content: "teste";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -10%;
+  left: -30%;
+  background: hsl(var(--corPadrao) 65% 88%);
+  z-index: -1;
+}
+
+/* -------------- SErviços -------------*/
+
+.card {
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-bottom: 0.25rem solid hsl(var(--corPadrao) 40% 57%);
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.card .title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Equipe */
+
+.swiper {
+  width: 100%;
+  height: 300px;
+}
+
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+#equipe blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 12px;
+}
+
+#equipe cite img {
+  width: 2rem;
+  height: 2rem;
+  clip-path: circle();
 }
