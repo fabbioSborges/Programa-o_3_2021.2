@@ -22,6 +22,7 @@ const swiper = new Swiper(".swiper", {
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
+    type: "bullets",
   },
 
   // Navigation arrows
@@ -34,4 +35,24 @@ const swiper = new Swiper(".swiper", {
   scrollbar: {
     el: ".swiper-scrollbar",
   },
+
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+      setWrapperSize: true,
+    },
+  },
 });
+
+const scrollReveal = ScrollReveal({
+  origin: "top",
+  distance: "70px",
+  duration: 700,
+  reset: true,
+});
+
+scrollReveal.reveal(
+  ` 
+  #servicos .card, #sobre .image`,
+  { interval: 100 }
+);

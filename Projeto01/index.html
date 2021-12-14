@@ -22,23 +22,22 @@
   <header id="header">
     <nav class="container">
 
-      <nav>
-        <a href="#" class="logo">Empresa <span> Junior</span></a>
-        <div class="menu">
-          <ul class="grid">
-            <li><a class="title" href="#home"> Inicio </a></li>
-            <li><a class="title" href="#sobre"> Sobre Nós </a></li>
-            <li><a class="title" href="#servicos"> Serviços </a></li>
-            <li><a class="title" href="#home"> Time </a></li>
-          </ul>
-        </div>
-        <div class="chave open">
-          <i class="">MENU</i>
-        </div>
-        <div class="chave close">
-          <i class="">CLOSE</i>
-        </div>
-      </nav>
+      <a href="#" class="logo">Empresa <span> Junior</span></a>
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title" href="#home"> Inicio </a></li>
+          <li><a class="title" href="#sobre"> Sobre Nós </a></li>
+          <li><a class="title" href="#servicos"> Serviços </a></li>
+          <li><a class="title" href="#equipe"> Time </a></li>
+        </ul>
+      </div>
+      <div class="chave open">
+        <i class="">MENU</i>
+      </div>
+      <div class="chave close">
+        <i class="">CLOSE</i>
+      </div>
+    </nav>
   </header>
   <main>
     <section id="home" class="section">
@@ -85,17 +84,19 @@
           <h2 class="title">Serviços</h2>
           <p> Conheça nossos serviçoes e como você pode impulsionar seus resultados</p>
         </div>
-        <div class="card">
-          <h3 class="title"> Desenvolvimento WEB</h3>
-          Desenvolvimento de sistemas web
-        </div>
-        <div class="card">
-          <h3 class="title"> Desenvolvimento Mobile</h3>
-          Desenvolvimento de sistemas web
-        </div>
-        <div class="card">
-          <h3 class="title"> Interface de Usuarios</h3>
-          Desenvolvimento de sistemas web
+        <div class="cards">
+          <div class="card">
+            <h3 class="title"> Desenvolvimento WEB</h3>
+            Desenvolvimento de sistemas web
+          </div>
+          <div class="card">
+            <h3 class="title"> Desenvolvimento Mobile</h3>
+            Desenvolvimento de sistemas web
+          </div>
+          <div class="card">
+            <h3 class="title"> Interface de Usuarios</h3>
+            Desenvolvimento de sistemas web
+          </div>
         </div>
       </div>
     </section>
@@ -106,41 +107,107 @@
           <h2 class="title">
             Nosso Time
           </h2>
-          <!-- Slider main container -->
-          <div class="equipes swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="equipe swiper-slide">
-                <blockquote>
-                  <p>
-                    <span>
-                      &ldquo;
-                    </span>
-                    Aluno do Segundo Periodo do Curso de COmutacao
-                  </p>
-                  <cite>
-                    <img src="https://randomuser.me/api/portraits/women/88.jpg" alt="foto1">
-                    Pedro Augusto
-                  </cite>
-                </blockquote>
-              </div>
+
+        </div>
+        <!-- Slider main container -->
+        <div class="equipes swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="equipe swiper-slide">
+              <blockquote>
+                <p>
+                  <span>
+                    &ldquo;
+                  </span>
+                  Aluno do Segundo Periodo do Curso de COmutacao
+                </p>
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/88.jpg" alt="foto1">
+                  Pedro Augusto
+                </cite>
+              </blockquote>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-
+            <div class="equipe swiper-slide">
+              <blockquote>
+                <p>
+                  <span>
+                    &ldquo;
+                  </span>
+                  Aluno do Segundo
+                </p>
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/88.jpg" alt="foto1">
+                  Pedro Augusto
+                </cite>
+              </blockquote>
+            </div>
+            <div class="equipe swiper-slide">
+              <blockquote>
+                <p>
+                  <span>
+                    &ldquo;
+                  </span>
+                  Aluno do Segundo
+                </p>
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/88.jpg" alt="foto1">
+                  Pedro Augusto
+                </cite>
+              </blockquote>
+            </div>
           </div>
 
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="divisao"></div>
+    <section class="section" id="contatos">
+      <div class="container grid">
+        <div class="text">
+          <h2 class="title">
+            Entre em contato com a gente!
+          </h2>
+          <p>
+            Entre em contato com a empresa junior da UESPI, queremos ouvir suas sugestões
+          </p>
+          <a href="#" class="button"> Entrar em contato</a>
+        </div>
+        <div>
+          <ul class="listContatos">
+            <li> 86 99999-9999</li>
+            <li> Rua treze quadra 72</li>
+            <li> teste@gmail.com </li>
+          </ul>
         </div>
       </div>
     </section>
+    <div class="divisao"></div>
+    <footer class="section" id="footer">
+      <div class="container grid">
+        <div class="info">
+          <a href="#" class="logo">Empresa <span> Junior</span></a>
+          <p> 2021 COmputação UESPI</p>
+          <p> Todos os Direitos Reservados</p>
+        </div>
+
+      </div>
+
+    </footer>
   </main>
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
   <script src="main.js"></script>
 </body>
 
